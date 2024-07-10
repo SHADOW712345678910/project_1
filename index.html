@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+    <title>Spotify - Web Player: Music for everyone</title>
+  </head>
+
+  <body>
+    <div class="container flex bg-black">
+      <div class="left">
+        <div class="home bg-grey rounded m-1 p-1">
+          <div class="logo">
+            <img width="110" class="invert" src="img/logo.svg" alt="" />
+          </div>
+          <ul>
+            <li><img class="invert" src="img/home.svg" alt="home" />Home</li>
+            <li>
+              <img class="invert" src="img/search.svg" alt="home" />Search
+            </li>
+          </ul>
+        </div>
+
+        <div class="library bg-grey rounded m-1 p-1">
+          <div class="heading">
+            <img class="invert" src="img/playlist.svg" alt="" />
+            <h2>Your Library</h2>
+            <div class="close">
+              <img width="30" class="invert" src="img/close.svg" alt="" />
+            </div>
+          </div>
+          <div class="playlist">
+            <span class="text1">Create your first playlist</span>
+
+            <span class="text2">It’s easy, we’ll help you</span>
+
+            <button class="btn">create playlist</button>
+          </div>
+
+          <div class="songList">
+            <ul></ul>
+          </div>
+
+          <div class="footer">
+            <div>
+              <a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a>
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/privacy/"
+                ><span>Privacy Center</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/privacy-policy/"
+                ><span>Privacy Policy</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/cookies-policy/"
+                ><span>Cookies</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"
+                ><span>About Ads</span></a
+              >
+            </div>
+            <div>
+              <a href="https://www.spotify.com/jp/accessibility/"
+                ><span>Accessibility</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right bg-grey rounded">
+        <div class="header">
+          <div class="nav">
+            <div class="hamburgerContainer">
+              <img
+                width="40"
+                class="invert hamburger"
+                src="img/hamburger.svg"
+                alt=""
+              />
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15 6L9.70711 11.2929C9.37377 11.6262 9.20711 11.7929 9.20711 12C9.20711 12.2071 9.37377 12.3738 9.70711 12.7071L15 18"
+                  stroke="#ffffff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9 18L14.2929 12.7071C14.6262 12.3738 14.7929 12.2071 14.7929 12C14.7929 11.7929 14.6262 11.6262 14.2929 11.2929L9 6"
+                  stroke="#ffffff"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="buttons">
+            <button class="signupbtn" id="href7" >Sign up</button>
+            <button class="loginbtn" id="href6">Log in</button>
+          </div>
+        </div>
+        <div class="spotifyPlaylists">
+          <h1>Spotify Playlists</h1>
+          <div class="cardContainer">
+            <div class="card" id="href">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+
+              <img
+                src="https://seed-mix-image.spotifycdn.com/v6/img/artist/1uNFoZAHBGtllmzznpCI3s/en-GB/default"
+                alt=""
+              />
+              <h4>Justin Bieber Mix</h4>
+
+              <p>By Spotify</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67706f000000027a755a1c415eb319e5d91c50"
+                alt=""
+              />
+              <h4>This Is Billie Eilish</h4>
+
+              <p>By Spotify</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                src="https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO4gTUOY-default.jpg"
+                alt=""
+              />
+              <h4>This Is Eminem</h4>
+
+              <p>By Spotify</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                src="	https://seed-mix-image.spotifycdn.com/v6/img/desc/Hype%20Workout/en/default"
+                alt=""
+              />
+              <h4>Hype Workout Mix</h4>
+
+              <p>By Spotify</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da843d17d48e27e47b03a9145b2a"
+                alt=""
+              />
+              <h4>Workout-Hindi songs</h4>
+
+              <p>By Ayush</p>
+            </div>
+          </div>
+
+          <h1>Popular artists</h1>
+          <div class="cardContainer">
+            <div class="card" id="href2">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                class="artist"
+                src="https://i.scdn.co/image/ab676161000051740261696c5df3be99da6ed3f3"
+                alt=""
+              />
+              <h4>Arijit Singh</h4>
+
+              <p class="name-A">Artist</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                class="artist"
+                src="https://i.scdn.co/image/ab67616100005174e1e00861cdb6bf56b14a1118"
+                alt=""
+              />
+              <h4>Darshan Raval</h4>
+
+              <p class="name-A">Artist</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                class="artist"
+                src="https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c"
+                alt=""
+              />
+              <h4>A.R. Rahman</h4>
+
+              <p class="name-A">Artist</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                class="artist"
+                src="https://i.scdn.co/image/ab67616100005174c40600e02356cc86f0debe84"
+                alt=""
+              />
+              <h4>Atif Aslam</h4>
+
+              <p class="name-A">Artist</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                class="artist"
+                src=" https://i.scdn.co/image/ab6761610000517490b6c3d093f9b02aad628eaf"
+                alt=""
+              />
+              <h4>Vishal-Shekhar</h4>
+
+              <p class="name-A">Artist</p>
+            </div>
+          </div>
+
+          <h1>Popular albums</h1>
+
+          <div class="cardContainer">
+            <div class="card" id="href3">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                src=" https://i.scdn.co/image/ab67616d00001e029554399c29197aca6e934f4c"
+                alt=""
+              />
+              <h4>Satyaprem Ki Katha</h4>
+
+              <p class="name-A">2023 • Various Artists</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                src="    https://i.scdn.co/image/ab67616d00001e0260098f31391483986de30b66"
+                alt=""
+              />
+              <h4>Tu Jhoothi Main Makkaar</h4>
+
+              <p class="name-A">2023 • Pritam</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                src=" https://i.scdn.co/image/ab67616d00001e0299241710b1b1b590b79d444e
+                "
+                alt=""
+              />
+              <h4>Gully Boy</h4>
+
+              <p class="name-A">2019 • Various Artists</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                src="  https://i.scdn.co/image/ab67616d00001e02c5545f737b16ad5ee767b62a
+                "
+                alt=""
+              />
+              <h4>Kabir Shigh</h4>
+
+              <p class="name-A">Various Artists</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                src="   https://i.scdn.co/image/ab67616d00001e0254e544672baa16145d67612b
+
+                "
+                alt=""
+              />
+              <h4>Rockstar</h4>
+
+              <p class="name-A">A.R. Rahman</p>
+            </div>
+          </div>
+
+          <h1>Mood</h1>
+
+          <div class="cardContainer">
+            <div class="card" id="href4">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                src="  https://i.scdn.co/image/ab67706f000000021383ef25f681eb390e7806b7
+
+                "
+                alt=""
+              />
+              <h4>Chill Hits</h4>
+
+              <p class="name-A">
+                Kick back to the best new and recent chill hits.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                src="  https://i.scdn.co/image/ab67706f00000002b54baffea8ac101d315fc0cb
+
+                "
+                alt=""
+              />
+              <h4>Sad hour</h4>
+
+              <p class="name-A">
+                heartbreak feels good in a place like this. Cover: Halsey.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                src="  https://i.scdn.co/image/ab67706f00000002eaf82c5deec5034ce2cf0ab1
+
+                "
+                alt=""
+              />
+              <h4>Long Distance</h4>
+
+              <p class="name-A">
+                Long distance is hard, but true love knows no boundaries.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                src="  https://i.scdn.co/image/ab67706f000000024a17b85a15a8c0c5af3e795d
+
+                "
+                alt=""
+              />
+              <h4>Sleep</h4>
+
+              <p class="name-A">
+                Gentle Ambient piano to help you fall asleep.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                src=" https://i.scdn.co/image/ab67706f00000002f3ce4c5b615e345331a22830
+
+                "
+                alt=""
+              />
+              <h4>Deep Focus</h4>
+
+              <p class="name-A">
+                Keep calm and focus with ambient and post-rock music.
+              </p>
+            </div>
+          </div>
+
+          <h1>Instrumental</h1>
+
+          <div class="cardContainer">
+            <div class="card" id="href5">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                src=" https://i.scdn.co/image/ab67706f000000023e3927482e7d58d7a8a216b0
+
+                "
+                alt=""
+              />
+              <h4>lofi chill</h4>
+
+              <p class="name-A">Lazy slow lofi beats for laid-back moments.</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                src="https://i.scdn.co/image/ab67616d00001e0259516c2a06ef32f25d3e7d9b
+
+                "
+                alt=""
+              />
+              <h4>Instrumental India</h4>
+
+              <p class="name-A">2003 • Various Artists</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                src=" https://i.scdn.co/image/ab67616d00001e02447dff05d3bb99d9f975226d
+
+                "
+                alt=""
+              />
+              <h4>Intomental</h4>
+
+              <p class="name-A">2022 • Jazz Spastiks</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                src=" https://i.scdn.co/image/ab67616d00001e0238ad3f19791dddac6f4ea5a0
+
+                "
+                alt=""
+              />
+              <h4>Aashiqui - Instrumental</h4>
+
+              <p class="name-A">2013 • Bhushan Dua</p>
+            </div>
+
+            <div class="card">
+              <div class="play">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M5 20V4L19 12L5 20Z" fill="#000000" />
+                </svg>
+              </div>
+              <img
+                src="  https://i.scdn.co/image/ab67616d00001e02fae4b6efc40f569bb5c50f03
+
+                "
+                alt=""
+              />
+              <h4>Sanam Re - Instrumental</h4>
+
+              <p class="name-A">2018 • Sandeep Thakur,Tejas Vinchurkar</p>
+            </div>
+          </div>
+
+          <div class="playbar">
+            <div class="seekbar">
+              <div class="circle"></div>
+            </div>
+            <div class="abovebar">
+              <div class="songinfo"></div>
+              <div class="songbuttons">
+                <img width="35" id="previous" src="img/prevsong.svg" alt="" />
+                <img width="35" id="play" src="img/play.svg" alt="" />
+                <img width="35" id="next" src="img/nextsong.svg" alt="" />
+              </div>
+              <div class="timevol">
+                <div class="songtime"></div>
+                <div class="volume">
+                  <img width="25" src="img/volume.svg" alt="" />
+                  <div class="range">
+                    <input type="range" name="volume" id="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

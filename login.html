@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/login1.css" />
+
+    <title>login</title>
+  </head>
+  <body  onload="getcookiedata()" >
+    <div class="container">
+      <div class="logo_container">
+        <img class="logo" src="img/logo-spotify.svg" alt="" />
+      </div>
+
+      <h1 class="header_h1">Log in to Spotify</h1>
+
+      <div class="btn-container">
+        <div class="btn">
+          <img
+            src="	https://accounts.scdn.co/sso/images/new-google-icon.72fd940a229bc94cf9484a3320b3dccb.svg"
+            alt=""
+          />
+          <p class="btn-para">Continue with Google</p>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <div class="btn">
+          <img
+            class="fb"
+            src="	https://accounts.scdn.co/sso/images/new-facebook-icon.eae8e1b6256f7ccf01cf81913254e70b.svg"
+            alt=""
+          />
+          <p class="btn-para">Continue with Facebook</p>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <div class="btn">
+          <img
+            src="	https://accounts.scdn.co/sso/images/new-apple-icon.e356139ea90852da2e60f1ff738f3cbb.svg"
+            alt=""
+          />
+          <p class="btn-para">Continue with Apple</p>
+        </div>
+      </div>
+
+      <div class="btn-container">
+        <div class="btn">
+          <p class="btn-para">Continue with phone number</p>
+        </div>
+      </div>
+
+      <hr class="hr" />
+
+      <form class="form">
+        <label class="label">
+          <span>Email or username</span>
+        </label>
+
+        <div>
+            <input id="username"   name="email"  class="input" type="email" placeholder="Email or username">
+        </div>
+        
+        
+        
+        
+        <label class="label2">
+          <span>password</span>
+        </label>
+    
+        <div class="password">
+            <input id="check" class="input"   onChange= "handlechange2()" name="password" type="password" placeholder="password">
+
+            <img src="img\pass-hide.svg" id="pass"  class="pass-hide"  alt="">
+        </div>
+
+<!-- Rounded switch -->
+<label class="switch">
+  <input type="checkbox" onclick="setcookie()"    checked>
+  <span class="slider round"></span>
+
+</label>
+<p  class="Remember_me" >Remember me</p>
+
+
+<button class="btn_login"> <span class="span_login">Log In</span>      </button>
+
+
+<p class="btn-para2"><u>Forgot your password?</u></p>
+
+<hr class="hr" />
+
+
+
+<p>Don't have an account? <u>Sign up for Spotify</u></p>
+
+
+
+
+    </form>
+    </div>
+
+</body>
+<script src="./js/login3.js"></script>
+</html>
